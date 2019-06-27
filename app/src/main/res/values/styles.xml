@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/tempsplashimage</item>   //이미지 파일 수정 필요( 임시 이미지)
+    </style>
+
 </resources>
