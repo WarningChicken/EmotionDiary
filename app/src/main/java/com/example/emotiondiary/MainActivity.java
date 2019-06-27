@@ -19,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String str;
+
         try {
             BufferedReader br = new BufferedReader(new FileReader(getFilesDir() + "user.txt"));
             str = br.readLine();
         }catch(Exception e){
             str = e.toString();
         }
+
 
         TextView textView = (TextView)findViewById(R.id.testtxt);
         textView.setText(str);
