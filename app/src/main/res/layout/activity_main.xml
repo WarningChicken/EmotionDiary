@@ -23,19 +23,25 @@
             android:id="@+id/bt1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="라이선스" />
+            android:text="BEADY Friends" />
 
         <Button
             android:id="@+id/bt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="캐릭터 소개" />
+            android:text="Introduction" />
 
         <Button
             android:id="@+id/bt3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="지난 감정" />
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기록" />
     </LinearLayout>
 
     <fragment

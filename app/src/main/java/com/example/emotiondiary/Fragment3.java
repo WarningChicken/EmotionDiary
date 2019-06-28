@@ -58,7 +58,7 @@ public class Fragment3 extends Fragment {
                 arrays[0] = SortnEmo(eList);
             }
         });
-        try {
+        /*try {
             ImageView imageView1 = (ImageView) view.findViewById(R.id.imageView1);
             ImageView imageView2 = (ImageView) view.findViewById(R.id.imageView2);
             ImageView imageView3 = (ImageView) view.findViewById(R.id.imageView3);
@@ -151,7 +151,7 @@ public class Fragment3 extends Fragment {
             }
         }catch (Exception e) {
 
-        }
+        }*/
 
 
                 //materialCalendarView.setBackground(Draw);

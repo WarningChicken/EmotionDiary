@@ -4,18 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AAD"
+    android:background="#FFFFFF"
     android:orientation="vertical">
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="82dp"
-        android:layout_height="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:srcCompat="@android:drawable/alert_light_frame"
-        tools:layout_editor_absoluteY="89dp" />
 
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/calendarView"
@@ -44,27 +34,37 @@
         app:layout_constraintVertical_bias="0.196" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="82dp"
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/alert_light_frame"
-        tools:layout_editor_absoluteY="89dp" />
+        app:srcCompat="@drawable/happy2"
+        tools:layout_editor_absoluteY="138dp" />
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="82dp"
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/alert_light_frame"
-        tools:layout_editor_absoluteY="89dp" />
+        app:srcCompat="@drawable/sad3"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:srcCompat="@drawable/angry4"
+        tools:layout_editor_absoluteY="138dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
