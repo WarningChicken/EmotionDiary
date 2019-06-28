@@ -3,6 +3,7 @@ package com.example.emotiondiary;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimationDrawable;
@@ -23,6 +24,8 @@ import java.io.File;
 import java.io.FileWriter;
 
 public class RegisterActivity extends AppCompatActivity {
+
+    public static Activity _RegisterActivity;
 
     String user_name;
     String avatar_name;
@@ -76,6 +79,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        _RegisterActivity = RegisterActivity.this;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
@@ -161,7 +166,7 @@ public class RegisterActivity extends AppCompatActivity {
      File userInfo = new File(getFilesDir() + "user.txt");
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(getFilesDir() + "user.txt"));
-            bw.write(user_name+":"+user_birthday+":"+user_character+":"+avatar_name+"\n"); // user_character --> 0~3
+            bw.write(user_name+":"+user_birthday+":"+user_character+":"+avatar_name+"\n"); // user_character --> 0~3 (default == 0)
             bw.close();
         } catch (Exception e) {
             finishAffinity();

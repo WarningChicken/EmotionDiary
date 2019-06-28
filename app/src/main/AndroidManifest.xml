@@ -8,9 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-
-
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
@@ -21,11 +19,9 @@
                 <category android:name="android.intrent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MainActivity" />
-
-        <activity
-            android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ChatActivity"></activity>
 
     </application>
 

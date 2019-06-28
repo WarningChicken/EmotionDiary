@@ -9,12 +9,17 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
     Button bt1,bt2,bt3;
     Fragment1 frag1;
     Fragment2 frag2;
     Fragment3 frag3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        RegisterActivity MA = (RegisterActivity)RegisterActivity._RegisterActivity;
+        MA.finish();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bt1 = (Button) findViewById(R.id.bt1);
