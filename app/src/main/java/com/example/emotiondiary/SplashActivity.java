@@ -2,12 +2,15 @@ package com.example.emotiondiary;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 
 public class SplashActivity extends Activity {
 
@@ -25,7 +28,6 @@ public class SplashActivity extends Activity {
             }
         }
 
-
         try {
             Thread.sleep(1000); // 1초간 슬립
         } catch (InterruptedException e) {
@@ -36,8 +38,8 @@ public class SplashActivity extends Activity {
         if (!userInfo.isFile()) {
             //회원 정보 파일 없으면 회원정보 입력 Activity로 이동
             startActivity(new Intent(this, RegisterActivity.class));
-            /*
-            try {
+
+/*            try {
                 BufferedWriter bw = new BufferedWriter(new FileWriter(getFilesDir() + "user.txt"));
                 bw.write("박준화:남:19961025\n");
                 bw.close();
